@@ -71,3 +71,82 @@ admission_source_id = {
 25: "Transfer from Ambulatory Surgery Center",
 26:"Transfer from Hospice"
 }
+
+diag_1_2_3 = {
+
+}
+
+age = {
+1:"[0-10)",
+2:"[10-20)",
+3:"[20-30)",
+4:"[30-40)",
+5:"[40-50)",
+6:"[50-60)",
+7:"[60-70)",
+8:"[70-80)",
+9:"[80-90)",
+10:"[90-100)"
+
+}
+
+gender = {
+1:"Male",
+2:"Female",
+3:"Unknown/Invalid"
+}
+
+race = {
+1:"AfricanAmerican",
+2:"Asian",
+3:"Caucasian",
+4:"Hispanic",
+5:"Other"
+}
+
+four_factor = {
+1: "Down",
+2: "No",
+3: "Steady",
+4: "Up"
+}
+
+two_factor = {
+1: "No",
+2: "Steady",
+}
+
+no_yes = {
+1: "Yes",
+2: "No"
+}
+
+three_factor = {
+1: "No",
+2: "Steady",
+}
+
+ch_no = {
+1:"No",
+2:"Ch"
+}
+
+readmission = {
+1:"<30",
+2:">30",
+3:"NO"
+}
+
+max_glu_serum = {
+1: ">200",
+2: ">300",
+3: "None",
+4: "Norm"
+}
+
+A1Cresult = {
+1: ">7",
+2: ">8",
+3: "None",
+4: "Norm"
+}
