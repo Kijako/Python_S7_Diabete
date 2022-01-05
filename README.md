@@ -17,6 +17,9 @@ The dataset represents 10 years (1999-2008) of clinical care at 130 US hospitals
 
 This data has been prepared to analyze factors related to readmission as well as other outcomes pertaining to patients with diabetes.
 
+## What files can you find in this repository 
+
+
 ## How does the API work ?
 The application is composed of 4 main parts :
 
