@@ -19,6 +19,7 @@ This data has been prepared to analyze factors related to readmission as well as
 
 ## What files can you find in this repository
 - You can find a jupyter notebook - project.ipynb - which summarizes all the work that has been done on the data set (cleaning, visualization, machine learning)
+- The dataset diabetes folder which contains a dictionary in python format, and the basic dataset, without cleaning
 
 ## How does the API work ?
 The application is composed of 4 main parts :
