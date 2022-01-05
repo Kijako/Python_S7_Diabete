@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Readmission prediction</title>
+</head>
+
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Diabetes Dataset
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="database">Dashboard</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="prediction">Prediction <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<body style="background-color: #303030	">
+    <section class="text-white">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2><br>Readmission Prediction</h2>
+                    <p class="lead" align="justify">Enter the requested parameters for our model to evaluate if the
+                        patient will
+                        be readmitted to the hospital or not. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <center>
+        <br>
+        <div style="border: black solid ; width: fit-content; background-color: aliceblue; ">
+            <form action="{{ url_for('predict') }}" method="post" class="text-center border border-light p-5">
+                <div class="row g-3">
+                    <div class="col">
+
+                        <!-- <label for="formGroupExampleInput">race</label>
+                        <input style="margin-bottom: 20px;" type="number" class="form-control" placeholder="Race"
+                            name="Race_input">
+
+                        <label for="formGroupExampleInput">gender</label>
+                        <input style="margin-bottom: 20px;" type="number" class="form-control" placeholder="Gender"
+                            name="Gender_input"> -->
+
+                        <!-- <label for="formGroupExampleInput">age</label> -->
+                        <input style="margin-bottom: 20px;" type="number" class="form-control" placeholder="Age"
+                            aria-label="First name" name="Age_input">
+
+                        <!-- <label for="formGroupExampleInput">admission_type_id</label> -->
+                        <!-- <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="admission_type_id" aria-label="First name" name="admission_type_id_input"> -->
+
+                        <!-- <label for="formGroupExampleInput">discharge_disposition_id</label> -->
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="discharge_disposition_id" aria-label="First name"
+                            name="discharge_disposition_id_input">
+
+                        <!-- <label for="formGroupExampleInput">admission_source_id</label> -->
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="admission_source_id" aria-label="First name" name="admission_source_id_input">
+
+                        <!-- <label for="formGroupExampleInput">num_medications</label> -->
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="num_medications" aria-label="First name" name="num_medications_input">
+
+                        <!-- <label for="formGroupExampleInput">time_in_hospital</label> -->
+                        <!-- <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="time_in_hospital" aria-label="First name" name="time_in_hospital_input"> -->
+
+                        <!-- <label for="formGroupExampleInput">num_lab_procedures</label> -->
+                        <!-- <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="num_lab_procedures" aria-label="First name" name="num_lab_procedures_input"> -->
+
+                        <!-- <label for="formGroupExampleInput">num_procedures</label> -->
+                        <!-- <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="num_procedures" aria-label="First name" name="num_procedures_input"> -->
+
+
+
+                    </div>
+
+                    <div class="col">
+
+                        <!-- <label for="formGroupExampleInput">diag_1</label> -->
+                        <!-- <input style="margin-bottom: 20px;" type="number" class="form-control" placeholder="diag_1"
+                            aria-label="First name" name="diag_1_input"> -->
+
+                        <!-- <label for="formGroupExampleInput">diag_2</label> -->
+                        <!-- <input style="margin-bottom: 20px;" type="number" class="form-control" placeholder="diag_2"
+                            aria-label="First name" name="diag_2_input"> -->
+
+                        <!-- <label for="formGroupExampleInput">diag_3</label> -->
+                        <!-- <input style="margin-bottom: 20px;" type="number" class="form-control" placeholder="diag_3"
+                            aria-label="First name" name="diag_3_input"> -->
+
+                        <!-- <label for="formGroupExampleInput">number_diagnoses</label> -->
+
+
+
+                        <!-- <label for="formGroupExampleInput">number_outpatient</label> -->
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="number_outpatient" aria-label="First name" name="number_outpatient_input">
+
+                        <!-- <label for="formGroupExampleInput">number_emergency</label> -->
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="number_emergency" aria-label="First name" name="number_emergency_input">
+
+                        <!-- <label for="formGroupExampleInput">number_inpatient</label> -->
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                        
+                            placeholder="number_inpatient" aria-label="First name" name="number_inpatient_input">
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="number_diagnoses" aria-label="First name" name="number_diagnoses_input">
+
+                        <!--
+                         <label for="formGroupExampleInput">A1Cresult</label> 
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="A1Cresult" aria-label="First name"
+                            name="A1Cresult_input">
+
+                        <!-- <label for="formGroupExampleInput">metformin</label> 
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="metformin" aria-label="First name" name="metformin_input">
+
+                        <!-- <label for="formGroupExampleInput">glipizide</label> 
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="glipizide" aria-label="First name" name="glipizide_input">
+
+                        <!-- <label for="formGroupExampleInput">glyburide</label> 
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="glyburide" aria-label="First name" name="glyburide_input">
+
+                        <!-- <label for="formGroupExampleInput">pioglitazone</label> 
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="pioglitazone" aria-label="First name" name="pioglitazone_input">
+
+                        <!-- <label for="formGroupExampleInput">rosiglitazone</label> 
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="rosiglitazone" aria-label="First name" name="rosiglitazones_input">
+
+                        <!-- <label for="formGroupExampleInput">insulin</label> 
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="insulin" aria-label="First name" name="insulin_input">
+
+                        <!-- <label for="formGroupExampleInput">change</label> 
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="change" aria-label="First name" name="change_input">
+
+                        <!-- <label for="formGroupExampleInput">diabetesMed</label> 
+                        <input style="margin-bottom: 20px;" type="number" class="form-control"
+                            placeholder="diabetesMed" aria-label="First name" name="diabetesMed_input">
+
+                        //-->
+                    </div>
+
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mb-3">Submit</button>
+            </form>
+        </div>
+    </center>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
