@@ -17,7 +17,7 @@ Medications were administered during the encounter
 This data has been prepared to analyze factors related to readmission as well as other outcomes pertaining to patients with diabetes.
 
 ## How does the API work ?
-This application is composed of 4 main parts :
+The application is composed of 4 main parts :
 
 Home : In this section, you will find all the general information necessary to understand how our API works and the general composition of the database
 
