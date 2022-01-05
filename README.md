@@ -22,6 +22,7 @@ This data has been prepared to analyze factors related to readmission as well as
 - The dataset diabetes folder which contains a dictionary in python format, and the basic dataset, without cleaning
 - the powerpoint Final Project.pdf contains a general presentation of the dataset, with a study of the variables, an explanation of the visualizations and an explanation of the machine learning that was performed on the dataset
 - The FLASK folder contains the API we made. You will find an explanation of the api below
+- The screens API folder contains pictures of our API in case you have any trouble running it
 
 ## How does the API work ?
 The application is composed of 4 main parts :
