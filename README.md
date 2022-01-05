@@ -9,11 +9,12 @@ Creation of an API using Flask and bootstrap so that a user can use the ML model
 Quick presentation of the DB
 The dataset represents 10 years (1999-2008) of clinical care at 130 US hospitals and integrated delivery networks. It includes over 50 features representing patient and hospital outcomes. Information was extracted from the database for encounters that satisfied the following criteria :
 
-It is an inpatient encounter (a hospital admission)
-It is a diabetic encounter, that is, one during which any kind of diabetes was entered to the system as a diagnosis
-The length of stay was at least 1 day and at most 14 days
-Laboratory tests were performed during the encounter
-Medications were administered during the encounter
+- It is an inpatient encounter (a hospital admission)
+- It is a diabetic encounter, that is, one during which any kind of diabetes was entered to the system as a diagnosis
+- The length of stay was at least 1 day and at most 14 days
+- Laboratory tests were performed during the encounter
+- Medications were administered during the encounter
+
 This data has been prepared to analyze factors related to readmission as well as other outcomes pertaining to patients with diabetes.
 
 ## How does the API work ?
