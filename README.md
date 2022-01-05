@@ -17,8 +17,8 @@ The dataset represents 10 years (1999-2008) of clinical care at 130 US hospitals
 
 This data has been prepared to analyze factors related to readmission as well as other outcomes pertaining to patients with diabetes.
 
-## What files can you find in this repository 
-
+## What files can you find in this repository
+- You can find a jupyter notebook - project.ipynb - which summarizes all the work that has been done on the data set (cleaning, visualization, machine learning)
 
 ## How does the API work ?
 The application is composed of 4 main parts :
